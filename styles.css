@@ -10,10 +10,15 @@
 body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 90%;
+  font-size: 100%;
   margin: auto;
   background: #f8f8f8;
   color: #555;
+}
+
+main {
+  width: 98%;
+  margin: auto;
 }
 
 header {
@@ -95,4 +100,75 @@ header .header-ad {
 
 header .header-ad i {
   font-size: 70%;
+}
+
+/* landing banners section */
+.landing-banner {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 0.5rem;
+  padding-top: 103px;
+}
+
+.landing-caption {
+  color: #fff;
+  max-width: 796px;
+  min-height: 113px;
+  width: 100%;
+}
+
+.landing-caption a {
+  color: #fff;
+}
+
+.landing-caption span a {
+  color: gray;
+}
+
+.landing-caption span a:hover {
+  color: #fff;
+}
+
+.landing-caption i {
+  font-size: 140%;
+  vertical-align: middle;
+}
+
+.landing-caption span {
+  color: gray;
+}
+
+.tech-img1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png") no-repeat;
+  background-size: cover;
+  background-position: 0 -60px;
+}
+
+.tech-img2 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-16-796x417.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 -60px;
+}
+
+.tech-img3 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-15-796x417.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 -60px;
+}
+
+.landing-caption div {
+  height: 100%;
+  padding: 12px;
+  line-height: 22px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.landing-caption span {
+  font-size: 75%;
 }
