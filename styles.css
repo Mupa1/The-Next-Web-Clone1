@@ -16,6 +16,11 @@ body {
   color: #555;
 }
 
+h2 a {
+  color: #ff4422;
+  font-weight: bold;
+}
+
 main {
   width: 98%;
   margin: auto;
@@ -46,22 +51,31 @@ header nav .header-logo {
   max-width: 106px;
 }
 
+header .header-left-container {
+  position: absolute;
+  top: 80px;
+  z-index: 1000;
+  display: none;
+}
+
 header .header-left {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80px;
   background: #000;
   opacity: 0.92;
   text-align: center;
   width: 106px;
-  z-index: 1;
   height: 170px;
 }
 
 header nav .header-left li {
   padding: 5px 0;
   font-size: 70%;
+}
+
+header .header-ad div a {
+  font-size: 80%;
+  color: #000;
 }
 
 header nav .header-left li a {
@@ -99,7 +113,7 @@ header .header-ad {
 }
 
 header .header-ad i {
-  font-size: 70%;
+  font-size: 80%;
 }
 
 /* landing banners section */
@@ -114,7 +128,6 @@ header .header-ad i {
 
 .landing-caption {
   color: #fff;
-  max-width: 796px;
   min-height: 113px;
   width: 100%;
 }
@@ -138,9 +151,10 @@ header .header-ad i {
 
 .landing-caption span {
   color: gray;
+  font-size: 75%;
 }
 
-.tech-img1 {
+.tech-img1 {https://tpc.googlesyndication.com/simgad/16325877537461191528
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png") no-repeat;
   background-size: cover;
   background-position: 0 -60px;
@@ -167,8 +181,4 @@ header .header-ad i {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.landing-caption span {
-  font-size: 75%;
 }
