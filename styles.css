@@ -154,7 +154,7 @@ header .header-ad i {
   font-size: 75%;
 }
 
-.tech-img1 {https://tpc.googlesyndication.com/simgad/16325877537461191528
+.tech-img1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png") no-repeat;
   background-size: cover;
   background-position: 0 -60px;
@@ -181,4 +181,10 @@ header .header-ad i {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.advert a img {
+  display: block;
+  margin: 28px auto;
+  padding-top: 24px;
 }
