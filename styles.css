@@ -26,8 +26,8 @@ i {
   font-size: 80%;
 }
 
-main {
-  width: 98%;
+main div:not(.landing-banner) {
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -128,7 +128,7 @@ header .header-ad i {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 0.5rem;
-  padding-top: 103px;
+  padding: 3px 8px 30px;
 }
 
 .landing-caption {
@@ -190,8 +190,4 @@ header .header-ad i {
 .advert a img {
   display: block;
   margin: 28px auto;
-}
-
-.latest-news {
-  
 }
