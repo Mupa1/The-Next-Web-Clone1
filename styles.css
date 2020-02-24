@@ -21,12 +21,16 @@ h2 a {
   font-weight: bold;
 }
 
+h2 a:hover {
+  color: #000;
+}
+
 i {
   vertical-align: middle;
   font-size: 80%;
 }
 
-main div:not(.landing-banner) {
+main > div:not(.landing-banner) {
   padding: 0 20px;
   margin: auto;
 }
@@ -190,4 +194,90 @@ header .header-ad i {
 .advert a img {
   display: block;
   margin: 28px auto;
+}
+
+/* Latest News Section */
+.latest-news .news-container {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(8, 72px);
+  grid-row-gap: 1rem;
+}
+
+.latest-news .news-container .news-info span {
+  line-height: 30px;
+  font-size: 85%;
+  color: gray;
+}
+
+.latest-news .news-container .news-info span a {
+  color: gray;
+}
+
+.latest-news .news-container .news-info h4 a {
+  color: #000;
+}
+
+.latest-news .news-container .news-info span a:hover {
+  color: #555;
+}
+
+.latest-news .news-container .news-info h4 {
+  font-size: 88%;
+  line-height: 18px;
+}
+
+.latest-news .news-container .news-info h4 a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-news .news-container .news-img {
+  height: 100%;
+  width: 72px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.point-icon::after {
+  content: "\B7";
+}
+
+.latest-news .news-container .news1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-4-516x270.png)");
+}
+
+.latest-news .news-container .news2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/sale_26012_primary_image_wide-540x270.jpg)");
+}
+
+.latest-news .news-container .news3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/gSRcrvo-540x270.jpg)");
+}
+
+.latest-news .news-container .news4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
+}
+
+.latest-news .news-container .news5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/sale_26142_primary_image_wide-540x270.jpg)");
+}
+
+.latest-news .news-container .news6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-516x270.png");
+}
+
+.latest-news .news-container .news7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-16-516x270.jpg");
+}
+
+.latest-news .news-container .news8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/digital-business-516x270.png");
+}
+
+.latest-news .news-container .news9 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/sale_26012_primary_image_wide-540x270.jpg)");
 }
