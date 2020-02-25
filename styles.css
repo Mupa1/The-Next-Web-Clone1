@@ -224,7 +224,7 @@ header .header-ad i {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat(8, 72px);
-  grid-row-gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .latest-news .news-container .news-info span {
