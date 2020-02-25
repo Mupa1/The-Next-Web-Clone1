@@ -14,20 +14,57 @@ body {
   margin: auto;
   background: #f8f8f8;
   color: #555;
+  line-height: 22px;
 }
 
 h2 a {
-  color: #ff4422;
+  color: #f42;
   font-weight: bold;
 }
 
-h2 a:hover {
+.landing-caption a {
+  color: #fff;
+}
+
+.landing-caption span a {
+  color: gray;
+}
+
+header .header-ad div a {
+  font-size: 80%;
+  color: #000;
+}
+
+header nav .header-left li a {
+  color: #fff;
+}
+
+.landing-caption span a:hover {
+  color: #fff;
+}
+
+h2 a:hover:not(.landing-caption h2) {
   color: #000;
 }
 
 i {
   vertical-align: middle;
   font-size: 80%;
+}
+
+.landing-caption div {
+  height: 100%;
+  padding: 12px;
+  line-height: 22px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.landing-caption i {
+  font-size: 140%;
 }
 
 main > div:not(.landing-banner) {
@@ -82,15 +119,6 @@ header nav .header-left li {
   font-size: 70%;
 }
 
-header .header-ad div a {
-  font-size: 80%;
-  color: #000;
-}
-
-header nav .header-left li a {
-  color: #fff;
-}
-
 header nav .header-right li {
   padding: 0 15px;
   height: 100%;
@@ -111,7 +139,7 @@ header nav .header-right li .fa-bars {
 }
 
 header .header-ad {
-  height: 55px;
+  height: 60px;
   width: 100%;
   background: #ff0;
   color: #000;
@@ -132,7 +160,7 @@ header .header-ad i {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 0.5rem;
-  padding: 3px 8px 30px;
+  padding: 103px 8px 0;
 }
 
 .landing-caption {
@@ -141,20 +169,8 @@ header .header-ad i {
   width: 100%;
 }
 
-.landing-caption a {
-  color: #fff;
-}
-
-.landing-caption span a {
-  color: gray;
-}
-
-.landing-caption span a:hover {
-  color: #fff;
-}
-
-.landing-caption i {
-  font-size: 140%;
+.landing-caption h2 {
+  font-size: 125%;
 }
 
 .landing-caption span {
@@ -180,25 +196,14 @@ header .header-ad i {
   background-position: 0 -60px;
 }
 
-.landing-caption div {
-  height: 100%;
-  padding: 12px;
-  line-height: 22px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .advert a img {
   display: block;
-  margin: 28px auto;
+  margin: 60px auto 40px;
 }
 
 /* Latest News Section */
 .latest-news .news-container {
-  padding: 30px 0;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat(8, 72px);
