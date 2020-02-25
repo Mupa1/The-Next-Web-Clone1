@@ -17,6 +17,14 @@ body {
   line-height: 22px;
 }
 
+a {
+  color: #555;
+}
+
+a:hover {
+  color: #000;
+}
+
 h2 a {
   color: #f42;
   font-weight: bold;
@@ -30,6 +38,10 @@ h2 a {
   color: gray;
 }
 
+.latest-funding > p a {
+  color: #f42;
+}
+
 header .header-ad div a {
   font-size: 80%;
   color: #000;
@@ -41,6 +53,10 @@ header nav .header-left li a {
 
 .landing-caption span a:hover {
   color: #fff;
+}
+
+.latest-funding > p a:hover {
+  color: #000;
 }
 
 h2 a:hover:not(.landing-caption h2) {
@@ -68,6 +84,7 @@ i {
 }
 
 main > div:not(.landing-banner) {
+  width: 100%;
   padding: 0 20px;
   margin: auto;
 }
@@ -165,7 +182,7 @@ header .header-ad i {
 
 .landing-caption {
   color: #fff;
-  min-height: 113px;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -285,4 +302,98 @@ header .header-ad i {
 
 .latest-news .news-container .news9 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/sale_26012_primary_image_wide-540x270.jpg)");
+}
+
+/* Latest Funding */
+.latest-funding {
+  line-height: 30px;
+  font-size: 90%;
+}
+
+.latest-funding h2 {
+  margin-bottom: 8px;
+  font-size: 160%;
+}
+
+.latest-funding h3 {
+  font-size: 130%;
+}
+
+.latest-funding .funding-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 1rem;
+  position: relative;
+  z-index: -1;
+}
+
+.latest-funding .funding-info img {
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.latest-funding .funding-info .funding-info-cont:first-child > h3 a {
+  color: #fff;
+}
+
+.latest-funding .funding-info .funding-info-cont > h3 {
+  background: #f42;
+  padding: 6px 6px 6px 84px;
+  margin-top: 20px;
+}
+
+.latest-funding .funding-info .funding-info-cont .series h3,
+.latest-funding .funding-info .funding-info-cont .series h5 {
+  padding-left: 84px;
+  line-height: 20px;
+}
+
+.latest-funding .funding-info .funding-info-cont .series {
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.latest-funding .funding-info .funding-info-cont .series h3 {
+  padding-top: 10px;
+  font-size: 130%;
+}
+
+.latest-funding .funding-info .funding-info-cont .series h3 a {
+  color: #000;
+}
+
+.latest-funding .funding-info .funding-info-cont .series h5 {
+  padding-bottom: 10px;
+  font-size: 80%;
+}
+
+.latest-funding .funding-info .funding-info-cont .series h5 a:hover {
+  color: #555;
+}
+
+.latest-funding .funding-info .funding-info-cont p i {
+  color: #000;
+  font-size: 120%;
+}
+
+.latest-funding .funding-info .funding-info-cont .tag {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  font-size: 90%;
+}
+
+.latest-funding .funding-info .funding-info-cont .last-link {
+  color: #555;
+  font-size: 90%;
+}
+
+.latest-funding .funding-info .funding-info-cont .last-link a:hover {
+  color: #555;
+}
+
+.latest-funding .funding-info .funding-info-cont .last-link span {
+  color: lightgray;
+  line-height: 30px;
 }
