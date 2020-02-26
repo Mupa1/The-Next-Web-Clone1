@@ -94,6 +94,7 @@ header {
   background: #fff;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 header nav {
@@ -324,22 +325,25 @@ header .header-ad i {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   grid-row-gap: 1rem;
-  position: relative;
-  z-index: -1;
 }
 
-.latest-funding .funding-info img {
+.latest-funding .funding-info .funding-info-cont {
+  position: relative;
+  /* z-index: 1003; */
+}
+
+.latest-funding .funding-info .funding-info-cont img {
   width: 60px;
   position: absolute;
   top: 30px;
   left: 10px;
 }
 
-.latest-funding .funding-info .funding-info-cont:first-child > h3 a {
+.latest-funding .funding-info .funding-info-cont .funding-title a {
   color: #fff;
 }
 
-.latest-funding .funding-info .funding-info-cont > h3 {
+.latest-funding .funding-info .funding-info-cont .funding-title {
   background: #f42;
   padding: 6px 6px 6px 84px;
   margin-top: 20px;
