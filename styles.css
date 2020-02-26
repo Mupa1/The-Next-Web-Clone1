@@ -73,7 +73,7 @@ i {
   padding: 12px;
   line-height: 22px;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -323,13 +323,12 @@ header .header-ad i {
 .latest-funding .funding-info {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
   grid-row-gap: 1rem;
 }
 
 .latest-funding .funding-info .funding-info-cont {
   position: relative;
-  /* z-index: 1003; */
 }
 
 .latest-funding .funding-info .funding-info-cont img {
@@ -401,3 +400,96 @@ header .header-ad i {
   color: lightgray;
   line-height: 30px;
 }
+
+/* Articles Section */
+.articles-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  grid-gap: 1rem;
+}
+
+.articles-sections .lg-img {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  display: block;
+  width: 100%;
+  height: 402px;
+  margin: 20px auto;
+  margin-bottom: 2px;
+}
+
+.articles-sections .apps {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-368x276.jpg");
+}
+
+.articles-sections .title-container {
+  display: flex;
+  height: 96px;
+}
+
+.articles-sections .title-container .title {
+  background-color: rgba(255, 68, 34, 0.08);
+  height: 100%;
+  flex: 1;
+  padding: 10px 14px 0;
+  color: #f42;
+  line-height: 18px;
+}
+
+.articles-sections .title-container .title h4 {
+  font-size: 90%;
+}
+
+.articles-sections .title-container .title a {
+  color: #f42;
+}
+
+.articles-sections .title-container .title a:hover {
+  text-decoration: underline;
+}
+
+.articles-sections .title-container .title-img {
+  display: block;
+  flex: 0 0 96px;
+  background-color: #000;
+  background-position: 50%;
+  background-size: cover;
+  height: 96px;
+  width: 96px;
+}
+
+.articles-sections ul li {
+  padding: 5px 0 5px 16px;
+  font-size: 85%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.articles-sections ul li::before {
+  color: #f42;
+  content: "\2022";
+  position: absolute;
+  left: 20px;
+}
+
+.articles-sections .apps-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Smithsonian.jpg");
+}
+
+.articles-sections .gear {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/fujifilm-x-t4-camera-mirrorless-368x276.jpg");
+}
+
+.articles-sections .gear-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2014/07/Wifi-730x279.jpg");
+}
+
+.articles-sections .tech {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/lab-mouse-368x276.jpg");
+}
+
+.articles-sections .tech-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/farmers-market-1329008_1280.jpg");
+}
+
