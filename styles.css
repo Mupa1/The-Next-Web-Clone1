@@ -596,3 +596,36 @@ header .header-ad i {
 .latest-deals .title-cont h2 {
   flex: 3;
 }
+
+/* Footer Section */
+footer .top-footer {
+  background-color: #131313;
+  text-align: center;
+  height: 161px;
+  vertical-align: middle;
+  line-height: 161px;
+}
+
+footer .top-footer ul {
+  display: flex;
+  align-content: space-between;
+  width: 55%;
+  margin: auto;
+}
+
+footer .top-footer ul li {
+  flex: 1;
+  font-size: 150%;
+}
+
+footer .top-footer ul li a i {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer .top-footer ul li a:hover i {
+  background-color: #131313;
+  border: 2px solid #333;
+}
