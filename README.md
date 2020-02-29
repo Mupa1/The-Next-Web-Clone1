@@ -1,6 +1,10 @@
 # Responsive-Design-The-Next-Web-Solo
 Cloning The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced
 
+[Live Demo](https://romantic-hopper-214a74.netlify.com/)
+
+### Small screens view max-width: 600px
+
 ![screenshot](./images/small-screen-screenshot.png)
 
 ## Built With
