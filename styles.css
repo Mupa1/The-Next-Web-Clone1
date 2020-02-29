@@ -629,7 +629,7 @@ footer .top-footer nav .other-links {
 }
 
 footer .top-footer nav .other-links li {
-  font-size: 80%;
+  font-weight: 600;
 }
 
 footer .top-footer nav ul li a i {
@@ -671,4 +671,8 @@ footer .bottom-footer span {
 footer .bottom-footer img {
   display: inline-block;
   height: 9px;
+}
+
+.blocked-font {
+  font-family: Rajdhani, Arial, Helvetica, sans-serif;
 }
