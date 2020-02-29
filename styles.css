@@ -603,22 +603,36 @@ footer .top-footer {
   text-align: center;
   height: 161px;
   vertical-align: middle;
-  line-height: 161px;
+  padding: 35px 0;
+  line-height: 55px;
 }
 
-footer .top-footer ul {
+footer .top-footer nav ul {
   display: flex;
   align-content: space-between;
   width: 55%;
-  margin: auto;
+  margin: 0 auto;
 }
 
-footer .top-footer ul li {
+footer .top-footer nav .icons li {
   flex: 1;
+}
+
+footer .top-footer nav .icons li {
   font-size: 150%;
 }
 
-footer .top-footer ul li a i {
+footer .top-footer nav .other-links {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .top-footer nav .other-links li {
+  font-size: 80%;
+}
+
+footer .top-footer nav ul li a i {
   border-radius: 50%;
   padding: 10px;
   background-color: #333;
@@ -627,7 +641,34 @@ footer .top-footer ul li a i {
   height: 40px;
 }
 
-footer .top-footer ul li a:hover i {
+footer .top-footer nav ul li a:hover i {
   background-color: #131313;
   border: 2px solid #333;
+}
+
+footer .top-footer nav .other-links li a {
+  color: #aaa;
+}
+
+footer .top-footer nav .other-links li a:hover {
+  color: #fff;
+}
+
+footer .bottom-footer {
+  background-color: #000;
+  height: 122px;
+  text-align: center;
+  color: #aaa;
+  font-size: 82%;
+  vertical-align: middle;
+  padding: 32px 0;
+}
+
+footer .bottom-footer span {
+  color: #f42;
+}
+
+footer .bottom-footer img {
+  display: inline-block;
+  height: 9px;
 }
