@@ -21,13 +21,13 @@ a {
   color: #555;
 }
 
-a:hover {
-  color: #000;
-}
-
 h2 a {
   color: #f42;
   font-weight: bold;
+}
+
+a:hover {
+  color: #000;
 }
 
 .landing-caption a {
@@ -130,6 +130,12 @@ header .header-left {
   text-align: center;
   width: 106px;
   height: 170px;
+}
+
+.articles-sections ul li {
+  padding: 5px 0 5px 16px;
+  font-size: 85%;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 header nav .header-left li {
@@ -235,11 +241,32 @@ header .header-ad i {
   color: gray;
 }
 
+.articles-sections .title-container .title a {
+  color: #f42;
+}
+
+.latest-deals .title-cont .all-deals a {
+  color: #f42;
+  font-size: 95%;
+}
+
 .latest-news .news-container .news-info span a {
   color: gray;
 }
 
 .latest-news .news-container .news-info h4 a {
+  color: #000;
+}
+
+.latest-funding .funding-info .funding-info-cont .funding-title a {
+  color: #fff;
+}
+
+.articles-sections .title-container .title a:hover {
+  text-decoration: underline;
+}
+
+.latest-deals .title-cont .all-deals a:hover {
   color: #000;
 }
 
@@ -340,10 +367,6 @@ header .header-ad i {
   left: 10px;
 }
 
-.latest-funding .funding-info .funding-info-cont .funding-title a {
-  color: #fff;
-}
-
 .latest-funding .funding-info .funding-info-cont .funding-title {
   background: #f42;
   padding: 6px 6px 6px 84px;
@@ -374,6 +397,10 @@ header .header-ad i {
   font-size: 80%;
 }
 
+.latest-funding .funding-info .funding-info-cont .last-link a:hover {
+  color: #555;
+}
+
 .latest-funding .funding-info .funding-info-cont .series h5 a:hover {
   color: #555;
 }
@@ -392,10 +419,6 @@ header .header-ad i {
 .latest-funding .funding-info .funding-info-cont .last-link {
   color: #555;
   font-size: 90%;
-}
-
-.latest-funding .funding-info .funding-info-cont .last-link a:hover {
-  color: #555;
 }
 
 .latest-funding .funding-info .funding-info-cont .last-link span {
@@ -444,14 +467,6 @@ header .header-ad i {
   font-size: 90%;
 }
 
-.articles-sections .title-container .title a {
-  color: #f42;
-}
-
-.articles-sections .title-container .title a:hover {
-  text-decoration: underline;
-}
-
 .articles-sections .title-container .title-img {
   display: block;
   flex: 0 0 96px;
@@ -460,12 +475,6 @@ header .header-ad i {
   background-size: cover;
   height: 96px;
   width: 96px;
-}
-
-.articles-sections ul li {
-  padding: 5px 0 5px 16px;
-  font-size: 85%;
-  border-bottom: 1px solid #d3d3d3;
 }
 
 .articles-sections ul li::before {
@@ -509,7 +518,7 @@ header .header-ad i {
 }
 
 .articles-sections .podium-sml {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/big_survival_base_3.png")
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/big_survival_base_3.png");
 }
 
 .articles-sections .insights {
@@ -517,7 +526,7 @@ header .header-ad i {
 }
 
 .articles-sections .insights-sml {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/vp01-2_gliding_home.jpg")
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/vp01-2_gliding_home.jpg");
 }
 
 .articles-sections .launch {
@@ -525,7 +534,7 @@ header .header-ad i {
 }
 
 .articles-sections .launch-sml {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed.jpg")
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed.jpg");
 }
 
 .articles-sections .distract {
@@ -533,12 +542,15 @@ header .header-ad i {
 }
 
 .articles-sections .distract-sml {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Giphy_Jif-Featured.jpg")
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Giphy_Jif-Featured.jpg");
 }
 
 /* Latest Deals Section */
 .latest-deals .title-cont {
   margin: 50px auto 0;
+  display: flex;
+  align-content: space-between;
+  width: 100%;
 }
 
 .latest-deals .deals-cont .deal1 {
@@ -573,24 +585,9 @@ header .header-ad i {
   background-image: url("https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg");
 }
 
-.latest-deals .title-cont {
-  display: flex;
-  align-content: space-between;
-  width: 100%;
-}
-
 .latest-deals .title-cont .all-deals {
   flex: 1;
   color: #f42;
-}
-
-.latest-deals .title-cont .all-deals a {
-  color: #f42;
-  font-size: 95%;
-}
-
-.latest-deals .title-cont .all-deals a:hover {
-  color: #000;
 }
 
 .latest-deals .title-cont h2 {
@@ -616,9 +613,6 @@ footer .top-footer nav ul {
 
 footer .top-footer nav .icons li {
   flex: 1;
-}
-
-footer .top-footer nav .icons li {
   font-size: 150%;
 }
 
@@ -632,7 +626,8 @@ footer .top-footer nav .other-links li {
   font-weight: 600;
 }
 
-footer .top-footer nav ul li a i {
+footer .top-footer nav .icons li a .fab,
+footer .top-footer nav .icons li a .fas {
   border-radius: 50%;
   padding: 10px;
   background-color: #333;
@@ -641,16 +636,17 @@ footer .top-footer nav ul li a i {
   height: 40px;
 }
 
-footer .top-footer nav ul li a:hover i {
+footer .top-footer nav .icons li a:hover .fab,
+footer .top-footer nav .icons li a:hover .fas {
   background-color: #131313;
   border: 2px solid #333;
 }
 
-footer .top-footer nav .other-links li a {
+footer .top-footer nav .other-links li .links {
   color: #aaa;
 }
 
-footer .top-footer nav .other-links li a:hover {
+footer .top-footer nav .other-links li .links:hover {
   color: #fff;
 }
 
@@ -664,11 +660,11 @@ footer .bottom-footer {
   padding: 32px 0;
 }
 
-footer .bottom-footer span {
+footer .bottom-footer .heart {
   color: #f42;
 }
 
-footer .bottom-footer img {
+footer .bottom-footer .footer-img {
   display: inline-block;
   height: 9px;
 }
