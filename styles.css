@@ -231,12 +231,12 @@ header .header-ad i {
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: repeat(8, 72px);
+  grid-template-rows: repeat(8, auto);
   grid-gap: 1rem;
 }
 
 .latest-news .news-container .news-info span {
-  line-height: 30px;
+  line-height: 12px;
   font-size: 85%;
   color: gray;
 }
@@ -285,7 +285,7 @@ header .header-ad i {
 }
 
 .latest-news .news-container .news-img {
-  height: 100%;
+  height: 72px;
   width: 72px;
   background-color: #000;
   background-size: cover;
@@ -419,11 +419,12 @@ header .header-ad i {
 .latest-funding .funding-info .funding-info-cont .last-link {
   color: #555;
   font-size: 90%;
+  line-height: 18px;
+  padding-top: 10px;
 }
 
 .latest-funding .funding-info .funding-info-cont .last-link span {
   color: lightgray;
-  line-height: 30px;
 }
 
 /* Articles Section */
@@ -671,4 +672,47 @@ footer .bottom-footer .footer-img {
 
 .blocked-font {
   font-family: Rajdhani, Arial, Helvetica, sans-serif;
+}
+
+/* ==== Media Queries ==== */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 90%;
+  }
+
+  .landing-caption h2 {
+    font-size: 100%;
+  }
+
+  .landing-caption div {
+    line-height: 15px;
+  }
+
+  .advert a img {
+    width: 95%;
+  }
+
+  .articles-sections .lg-img {
+    height: 198px;
+  }
+
+  footer .top-footer nav ul {
+    width: 85%;
+  }
+
+  footer .top-footer nav .other-links {
+    width: 70%;
+    font-size: 90%;
+  }
+
+  footer .top-footer nav .icons li a .fab,
+  footer .top-footer nav .icons li a .fas {
+    width: 35px;
+    height: 35px;
+  }
 }
