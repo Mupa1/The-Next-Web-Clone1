@@ -3,9 +3,15 @@ Cloning The Next Web, a tech-focused magazine which uses media queries to gracef
 
 [Live Demo](https://romantic-hopper-214a74.netlify.com/)
 
-### Small screens view max-width: 600px
+### Extra small view (min-width:320px and max-width:480px)
 
-![screenshot](./images/small-screen-screenshot.png)
+#### Portriat
+
+![screenshot](./images/extra-small-screen-portriat.png)
+
+#### Landscape
+
+![screenshot](./images/extra-small-screen-landscape.png)
 
 ## Built With
 
