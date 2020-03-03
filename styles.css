@@ -818,4 +818,36 @@ footer .bottom-footer .footer-img {
   header nav .header-middle li:nth-child(-n+6) {
     display: inline-block;
   }
+
+  .landing-banner {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 250px;
+    grid-auto-rows: minmax(250px, auto);
+    margin-bottom: 150px;
+  }
+
+  .landing-banner .tech-img1 {
+    grid-row: 1/3;
+  }
+
+  .landing-banner .tech-img1 div h2 {
+    font-size: 250%;
+    line-height: 40px;
+  }
+
+
+
+  /* .tech-img1 {
+    grid-row: 1/12;
+  }
+
+  .tech-img2 {
+    grid-row: 2/4;
+  }
+
+  .tech-img3 {
+    grid-row: 7/8;
+  } */
 }
