@@ -238,8 +238,15 @@ header .header-ad i {
 .latest-news .news-container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
+  grid-gap: 1rem;
+}
+
+.latest-news .news-container .news-box {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
 }
 
