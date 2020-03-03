@@ -109,6 +109,10 @@ header nav ul {
   justify-content: flex-end;
 }
 
+header .top-nav-links {
+  display: none;
+}
+
 header nav .header-logo {
   height: 100%;
   flex: 1;
@@ -143,7 +147,7 @@ header nav .header-left li {
   font-size: 70%;
 }
 
-header nav .header-right li {
+header nav .header-middle li {
   padding: 0 15px;
   height: 100%;
   display: flex;
@@ -151,13 +155,17 @@ header nav .header-right li {
   border-left: 1px solid lightgray;
 }
 
-header nav .header-right li .fa-search {
+header nav .header-middle li:nth-child(-n+5) {
+  display: none;
+}
+
+header nav .header-middle li .fa-search {
   font-size: 120%;
   background: #fff;
   color: lightgray;
 }
 
-header nav .header-right li .fa-bars {
+header nav .header-middle li .fa-bars {
   color: #f42;
   font-size: 130%;
 }
@@ -715,5 +723,99 @@ footer .bottom-footer .footer-img {
   footer .top-footer nav .icons li a .fas {
     width: 35px;
     height: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  header {
+    height: 110px;
+  }
+
+  .header-logo {
+    height: 80px;
+    min-width: 120px;
+  }
+
+  header nav {
+    height: 80px;
+    width: calc(100% - 120px);
+  }
+
+  header .top-nav-links {
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    width: calc(100% - 120px);
+    padding: 5px 15px;
+    background-color: #000;
+    text-align: left;
+    height: 32px;
+  }
+
+  header .top-nav-links li {
+    margin: 0 1.5px;
+    display: inline;
+  }
+
+  header .top-nav-links li:nth-last-child(-n+4) {
+    float: right;
+    margin: 0 3px;
+  }
+
+  header .top-nav-links li .fa-caret-down {
+    font-size: 120%;
+  }
+
+  header .top-nav-links li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 85%;
+  }
+
+  header .top-nav-links #nav-news-link a {
+    color: #fff;
+  }
+
+  header .header-middle {
+    position: absolute;
+    height: 48px;
+    top: 32px;
+    right: 0;
+    width: calc(100% - 120px);
+  }
+
+  header .header-ad {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 135px;
+  }
+
+  header nav .header-middle {
+    display: block;
+  }
+
+  header .header-middle li:nth-last-child(-n+2) {
+    float: right;
+    vertical-align: middle;
+    line-height: 52px;
+  }
+
+  header nav .header-middle li:last-child {
+    display: none;
+  }
+
+  header nav .header-middle li:nth-child(-n+5) {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 52px;
+    border: 0;
+    margin-right: -20px;
+  }
+
+  header nav .header-middle li:nth-child(-n+6) {
+    display: inline-block;
   }
 }
