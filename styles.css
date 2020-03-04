@@ -377,10 +377,6 @@ aside .aside-icons i {
   font-size: 90%;
 }
 
-.bottom-margin {
-  padding-bottom: 40px;
-}
-
 .latest-funding h2 {
   margin-bottom: 8px;
   font-size: 160%;
@@ -462,10 +458,16 @@ aside .aside-icons i {
   font-size: 90%;
   line-height: 18px;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .latest-funding .funding-info .funding-info-cont .last-link span {
   color: lightgray;
+}
+
+.latest-funding .funding-info .funding-info-cont .last-link,
+.latest-funding .funding-info .funding-info-cont .tag {
+  background-color: rgba(255, 68, 34, 0.02);
 }
 
 /* Articles Section */
@@ -899,6 +901,7 @@ footer .bottom-footer .footer-img {
   .latest-funding .funding-info {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-bottom: 30px;
   }
 
   .latest-funding .funding-info .funding-info-cont {
