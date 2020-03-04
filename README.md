@@ -17,7 +17,7 @@ Cloning The Next Web, a tech-focused magazine which uses media queries to gracef
 
 #### Portriat
 
-![screenshot](./images/Medium-Portrait -768-by-1024.png)
+![screenshot](./images/medium-portrait-768-by-1024.png)
 
 #### Landscape
 
