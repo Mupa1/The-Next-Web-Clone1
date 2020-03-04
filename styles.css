@@ -860,4 +860,19 @@ footer .bottom-footer .footer-img {
     font-size: 250%;
     line-height: 40px;
   }
+
+  .latest-news .news-container {
+    grid-template-columns: repeat(auto-fill, minmax(219px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(219px, 1fr));
+  }
+
+  .latest-news .news-container .news-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+  }
+
+  .latest-news .news-container .news-img {
+    height: 100%;
+    width: 100%;
+  }
 }
