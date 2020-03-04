@@ -38,7 +38,7 @@ a:hover {
   color: gray;
 }
 
-.latest-funding > p a {
+.latest-funding ul li a {
   color: #f42;
 }
 
@@ -55,7 +55,7 @@ header nav .header-left li a {
   color: #fff;
 }
 
-.latest-funding > p a:hover {
+.latest-funding ul li a:hover {
   color: #000;
 }
 
@@ -109,6 +109,10 @@ header nav ul {
   justify-content: flex-end;
 }
 
+header .top-nav-links {
+  display: none;
+}
+
 header nav .header-logo {
   height: 100%;
   flex: 1;
@@ -143,7 +147,7 @@ header nav .header-left li {
   font-size: 70%;
 }
 
-header nav .header-right li {
+header nav .header-middle li {
   padding: 0 15px;
   height: 100%;
   display: flex;
@@ -151,13 +155,17 @@ header nav .header-right li {
   border-left: 1px solid lightgray;
 }
 
-header nav .header-right li .fa-search {
+header nav .header-middle li:nth-child(-n+5) {
+  display: none;
+}
+
+header nav .header-middle li .fa-search {
   font-size: 120%;
   background: #fff;
   color: lightgray;
 }
 
-header nav .header-right li .fa-bars {
+header nav .header-middle li .fa-bars {
   color: #f42;
   font-size: 130%;
 }
@@ -221,17 +229,46 @@ header .header-ad i {
 }
 
 /* Advert Section */
-.advert a img {
-  display: block;
-  margin: 60px auto 40px;
+aside {
+  text-align: center;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 1px solid lightgray;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.1);
+  height: 90px;
+  position: relative;
+}
+
+aside .aside-icons {
+  color: #09c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 10px;
+}
+
+aside .aside-icons i {
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Latest News Section */
 .latest-news .news-container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
+  grid-gap: 1rem;
+}
+
+.latest-news .news-container .news-box {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
 }
 
@@ -352,7 +389,7 @@ header .header-ad i {
 .latest-funding .funding-info {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
   grid-row-gap: 1rem;
 }
 
@@ -421,10 +458,16 @@ header .header-ad i {
   font-size: 90%;
   line-height: 18px;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .latest-funding .funding-info .funding-info-cont .last-link span {
   color: lightgray;
+}
+
+.latest-funding .funding-info .funding-info-cont .last-link,
+.latest-funding .funding-info .funding-info-cont .tag {
+  background-color: rgba(255, 68, 34, 0.02);
 }
 
 /* Articles Section */
@@ -481,9 +524,8 @@ header .header-ad i {
 .articles-sections ul li::before {
   color: #f42;
   content: "\2022";
-  position: absolute;
-  left: 20px;
   font-size: 120%;
+  margin: auto 10px auto -10px;
 }
 
 .articles-sections .apps-sml {
@@ -694,10 +736,6 @@ footer .bottom-footer .footer-img {
     padding: 5px;
   }
 
-  .advert a img {
-    width: 95%;
-  }
-
   .articles-sections .lg-img {
     height: 198px;
   }
@@ -715,5 +753,175 @@ footer .bottom-footer .footer-img {
   footer .top-footer nav .icons li a .fas {
     width: 35px;
     height: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 110px;
+  }
+
+  .header-logo {
+    height: 80px;
+    min-width: 120px;
+  }
+
+  header nav {
+    height: 80px;
+    width: calc(100% - 120px);
+  }
+
+  header .top-nav-links {
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    width: calc(100% - 120px);
+    padding: 5px 15px;
+    background-color: #000;
+    text-align: left;
+    height: 32px;
+  }
+
+  header .top-nav-links li {
+    margin: 0 1.5px;
+    display: inline;
+  }
+
+  .latest-funding .top-fund-links li + li::before {
+    content: "| ";
+    color: #f42;
+    padding: 0 5px;
+  }
+
+  header .top-nav-links li:nth-last-child(-n+4) {
+    float: right;
+    margin: 0 3px;
+  }
+
+  header .top-nav-links li .fa-caret-down {
+    font-size: 120%;
+  }
+
+  header .top-nav-links li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 85%;
+  }
+
+  header .top-nav-links #nav-news-link a {
+    color: #fff;
+  }
+
+  header .header-middle {
+    position: absolute;
+    height: 48px;
+    top: 32px;
+    right: 0;
+    width: calc(100% - 120px);
+  }
+
+  header .header-ad {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 135px;
+  }
+
+  header nav .header-middle {
+    display: block;
+  }
+
+  header .header-middle li:nth-last-child(-n+2) {
+    float: right;
+    vertical-align: middle;
+    line-height: 52px;
+  }
+
+  header nav .header-middle li:last-child {
+    display: none;
+  }
+
+  header nav .header-middle li:nth-child(-n+5) {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 52px;
+    border: 0;
+    margin-right: -20px;
+  }
+
+  header nav .header-middle li:nth-child(-n+6) {
+    display: inline-block;
+  }
+
+  .landing-banner {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 250px;
+    grid-auto-rows: minmax(250px, auto);
+    margin-bottom: 150px;
+  }
+
+  .landing-banner .tech-img1 {
+    grid-row: 1/3;
+  }
+
+  .landing-banner .tech-img1 div h2 {
+    font-size: 250%;
+    line-height: 40px;
+  }
+
+  .latest-news .news-container {
+    grid-template-columns: repeat(auto-fill, minmax(219px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(219px, 1fr));
+  }
+
+  .latest-news .news-container .news-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+  }
+
+  .latest-news .news-container .news-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  aside {
+    width: 728px;
+  }
+
+  .latest-funding .top-fund-links {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+  }
+
+  .latest-funding .funding-info {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 30px;
+  }
+
+  .latest-funding .funding-info .funding-info-cont {
+    padding-right: 1em;
+  }
+
+  .articles-sections {
+    grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+  }
+
+  .articles-sections .article {
+    display: grid;
+    height: 850px;
+    grid-template-rows: 30px 426px 116px 1fr;
+  }
+
+  .title-container {
+    margin: 20px 0 90px;
+  }
+
+  .latest-deals .title-cont {
+    margin-top: 0;
   }
 }
