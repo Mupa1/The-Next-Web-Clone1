@@ -38,7 +38,7 @@ a:hover {
   color: gray;
 }
 
-.latest-funding > p a {
+.latest-funding ul li a {
   color: #f42;
 }
 
@@ -55,7 +55,7 @@ header nav .header-left li a {
   color: #fff;
 }
 
-.latest-funding > p a:hover {
+.latest-funding ul li a:hover {
   color: #000;
 }
 
