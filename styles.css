@@ -875,4 +875,8 @@ footer .bottom-footer .footer-img {
     height: 100%;
     width: 100%;
   }
+
+  aside {
+    width: 765px;
+  }
 }
