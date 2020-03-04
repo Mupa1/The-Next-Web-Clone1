@@ -13,6 +13,16 @@ Cloning The Next Web, a tech-focused magazine which uses media queries to gracef
 
 ![screenshot](./images/extra-small-screen-landscape.png)
 
+### Medium view (min-width:768px and max-width:1024px)
+
+#### Portriat
+
+![screenshot](./images/Medium-Portrait -768-by-1024.png)
+
+#### Landscape
+
+![screenshot](./images/medium-landscape-768-by-1024.png)
+
 ## Built With
 
 - HTML,
