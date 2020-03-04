@@ -524,9 +524,8 @@ aside .aside-icons i {
 .articles-sections ul li::before {
   color: #f42;
   content: "\2022";
-  position: absolute;
-  left: 20px;
   font-size: 120%;
+  margin: auto 10px auto -10px ;
 }
 
 .articles-sections .apps-sml {
@@ -906,5 +905,23 @@ footer .bottom-footer .footer-img {
 
   .latest-funding .funding-info .funding-info-cont {
     padding-right: 1em;
+  }
+
+  .articles-sections {
+    grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+  }
+
+  .articles-sections .article {
+    display: grid;
+    height: 850px;
+    grid-template-rows: 30px 426px 116px 1fr;
+  }
+
+  .title-container {
+    margin: 20px 0 90px;
+  }
+
+  .latest-deals .title-cont {
+    margin-top: 0;
   }
 }
