@@ -377,6 +377,10 @@ aside .aside-icons i {
   font-size: 90%;
 }
 
+.bottom-margin {
+  padding-bottom: 40px;
+}
+
 .latest-funding h2 {
   margin-bottom: 8px;
   font-size: 160%;
@@ -389,7 +393,7 @@ aside .aside-icons i {
 .latest-funding .funding-info {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
   grid-row-gap: 1rem;
 }
 
@@ -783,6 +787,12 @@ footer .bottom-footer .footer-img {
     display: inline;
   }
 
+  .latest-funding .top-fund-links li + li::before {
+    content: "| ";
+    color: #f42;
+    padding: 0 5px;
+  }
+
   header .top-nav-links li:nth-last-child(-n+4) {
     float: right;
     margin: 0 3px;
@@ -878,5 +888,20 @@ footer .bottom-footer .footer-img {
 
   aside {
     width: 765px;
+  }
+
+  .latest-funding .top-fund-links {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+  }
+
+  .latest-funding .funding-info {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .latest-funding .funding-info .funding-info-cont {
+    padding-right: 1em;
   }
 }
