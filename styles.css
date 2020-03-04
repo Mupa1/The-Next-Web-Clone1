@@ -229,9 +229,31 @@ header .header-ad i {
 }
 
 /* Advert Section */
-.advert a img {
-  display: block;
-  margin: 60px auto 40px;
+aside {
+  text-align: center;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 1px solid lightgray;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.1);
+  height: 90px;
+  position: relative;
+}
+
+aside .aside-icons {
+  color: #09c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 10px;
+}
+
+aside .aside-icons i {
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Latest News Section */
@@ -709,10 +731,6 @@ footer .bottom-footer .footer-img {
     padding: 5px;
   }
 
-  .advert a img {
-    width: 95%;
-  }
-
   .articles-sections .lg-img {
     height: 198px;
   }
@@ -735,7 +753,6 @@ footer .bottom-footer .footer-img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
   header {
     height: 110px;
   }
