@@ -672,7 +672,8 @@ footer .top-footer nav .other-links li {
 footer .top-footer nav .icons li a .fab,
 footer .top-footer nav .icons li a .fas {
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
+  border: 2px solid #333;
   background-color: #333;
   color: #fff;
   width: 40px;
