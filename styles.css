@@ -988,8 +988,8 @@ footer .bottom-footer .footer-img {
   }
 }
 
-/* Large devices (1025px and up) */
-@media only screen and (min-width: 1025px) {
+/* Large devices (1024px and up) */
+@media only screen and (min-width: 1024px) {
   header nav .header-logo {
     display: none;
   }
