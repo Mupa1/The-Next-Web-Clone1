@@ -137,7 +137,8 @@ header .header-left {
 }
 
 .articles-sections ul li {
-  padding: 5px 0 5px 16px;
+  margin-left: 16px;
+  padding: 5px 0;
   font-size: 85%;
   border-bottom: 1px solid #d3d3d3;
 }
@@ -525,7 +526,7 @@ aside .aside-icons i {
   color: #f42;
   content: "\2022";
   font-size: 120%;
-  margin: auto 10px auto -10px;
+  margin: auto 10px auto -16px;
 }
 
 .articles-sections .apps-sml {
@@ -914,20 +915,25 @@ footer .bottom-footer .footer-img {
 
   .articles-sections {
     grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .articles-sections .lg-img {
+    height: 266px;
   }
 
   .articles-sections .article {
     display: grid;
-    height: 850px;
-    grid-template-rows: 30px 426px 116px 1fr;
+    grid-template-rows: 30px 266px 116px 1fr;
+    padding-bottom: 24px;
   }
 
-  .title-container {
-    margin: 20px 0 90px;
+  .articles-sections .title-container {
+    margin: 22px 0 90px;
   }
 
   .latest-deals .title-cont {
-    margin-top: 0;
+    margin-top: 20;
   }
 
   .latest-deals .deals-cont .news-box {
