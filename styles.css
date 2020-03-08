@@ -137,7 +137,8 @@ header .header-left {
 }
 
 .articles-sections ul li {
-  padding: 5px 0 5px 16px;
+  margin-left: 16px;
+  padding: 5px 0;
   font-size: 85%;
   border-bottom: 1px solid #d3d3d3;
 }
@@ -173,7 +174,7 @@ header nav .header-middle li .fa-bars {
 header .header-ad {
   height: 60px;
   width: 100%;
-  background: #ff0;
+  background: #ffd633;
   color: #000;
   position: relative;
   text-align: center;
@@ -525,7 +526,7 @@ aside .aside-icons i {
   color: #f42;
   content: "\2022";
   font-size: 120%;
-  margin: auto 10px auto -10px;
+  margin: auto 10px auto -16px;
 }
 
 .articles-sections .apps-sml {
@@ -592,8 +593,12 @@ aside .aside-icons i {
 .latest-deals .title-cont {
   margin: 50px auto 0;
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
   width: 100%;
+}
+
+.latest-deals .deals-cont .news-box .deals-tags {
+  display: none;
 }
 
 .latest-deals .deals-cont .deal1 {
@@ -629,12 +634,7 @@ aside .aside-icons i {
 }
 
 .latest-deals .title-cont .all-deals {
-  flex: 1;
   color: #f42;
-}
-
-.latest-deals .title-cont h2 {
-  flex: 3;
 }
 
 /* Footer Section */
@@ -647,11 +647,15 @@ footer .top-footer {
   line-height: 55px;
 }
 
+footer .top-footer nav {
+  width: 320px;
+  margin: auto;
+}
+
 footer .top-footer nav ul {
   display: flex;
   align-content: space-between;
-  width: 55%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 footer .top-footer nav .icons li {
@@ -660,9 +664,10 @@ footer .top-footer nav .icons li {
 }
 
 footer .top-footer nav .other-links {
-  width: 48%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 footer .top-footer nav .other-links li {
@@ -672,7 +677,8 @@ footer .top-footer nav .other-links li {
 footer .top-footer nav .icons li a .fab,
 footer .top-footer nav .icons li a .fas {
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
+  border: 2px solid #333;
   background-color: #333;
   color: #fff;
   width: 40px;
@@ -879,11 +885,11 @@ footer .bottom-footer .footer-img {
 
   .latest-news .news-container .news-box {
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 1fr;
+    grid-template-rows: 171px 1fr;
   }
 
   .latest-news .news-container .news-img {
-    height: 100%;
+    min-height: 171px;
     width: 100%;
   }
 
@@ -909,19 +915,63 @@ footer .bottom-footer .footer-img {
 
   .articles-sections {
     grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .articles-sections .lg-img {
+    height: 266px;
   }
 
   .articles-sections .article {
     display: grid;
-    height: 850px;
-    grid-template-rows: 30px 426px 116px 1fr;
+    grid-template-rows: 30px 266px 116px 1fr;
+    padding-bottom: 24px;
   }
 
-  .title-container {
-    margin: 20px 0 90px;
+  .articles-sections .title-container {
+    margin: 22px 0 90px;
   }
 
   .latest-deals .title-cont {
-    margin-top: 0;
+    margin-top: 20;
+  }
+
+  .latest-deals .deals-cont .news-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .latest-deals .deals-cont .news-box .deals-tags {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #ffd633;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -39px;
+    right: -9px;
+  }
+
+  .latest-deals .deals-cont .news-box .deals-tags h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -75px;
+    bottom: -10px;
+    color: #000;
+    font-size: 87%;
+  }
+
+  footer .top-footer nav {
+    width: 360px;
+  }
+
+  footer .top-footer nav .other-links {
+    width: 80%;
+  }
+
+  footer .bottom-footer p {
+    display: inline-block;
   }
 }
