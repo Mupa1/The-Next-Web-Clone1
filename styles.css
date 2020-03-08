@@ -596,6 +596,10 @@ aside .aside-icons i {
   width: 100%;
 }
 
+.latest-deals .deals-cont .news-box .deals-tags {
+  display: none;
+}
+
 .latest-deals .deals-cont .deal1 {
   background-image: url("https://cdnp1.stackassets.com/b308bc79c3ab77999bf45188fae0a4f5b2e259a6/store/0eeb94683528836f896f7d52a53ba0f1f3e6ab58a9df554e357779a8c649/sale_15388_primary_image.jpg");
 }
