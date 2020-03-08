@@ -924,4 +924,31 @@ footer .bottom-footer .footer-img {
   .latest-deals .title-cont {
     margin-top: 0;
   }
+
+  .latest-deals .deals-cont .news-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .latest-deals .deals-cont .news-box .deals-tags {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #ffd633;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -39px;
+    right: -9px;
+  }
+
+  .latest-deals .deals-cont .news-box .deals-tags h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -75px;
+    bottom: -10px;
+    color: #000;
+    font-size: 87%;
+  }
 }
