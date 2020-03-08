@@ -809,9 +809,21 @@ footer .bottom-footer .footer-img {
     font-size: 120%;
   }
 
+  header .header-middle li a {
+    color: #aaa;
+  }
+
   header .top-nav-links li a {
     color: rgba(255, 255, 255, 0.6);
     font-size: 85%;
+  }
+
+  header .header-middle li a:hover {
+    color: #000;
+  }
+
+  header .top-nav-links li a:hover {
+    color: #fff;
   }
 
   header .top-nav-links #nav-news-link a {
@@ -973,5 +985,26 @@ footer .bottom-footer .footer-img {
 
   footer .bottom-footer p {
     display: inline-block;
+  }
+}
+
+/* Large devices (1025px and up) */
+@media only screen and (min-width: 1025px) {
+  header nav .header-logo {
+    display: none;
+  }
+
+  header .top-nav-links,
+  header .header-middle {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  header .header-middle {
+    padding-left: 5px;
+  }
+
+  header .header-ad {
+    padding-left: 20px;
   }
 }
