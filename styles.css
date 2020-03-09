@@ -202,6 +202,10 @@ header .header-ad i {
   width: 100%;
 }
 
+.landing-caption .landing-logo {
+  display: none;
+}
+
 .landing-caption h2 {
   font-size: 125%;
 }
@@ -1006,5 +1010,29 @@ footer .bottom-footer .footer-img {
 
   header .header-ad {
     padding-left: 20px;
+  }
+
+  .landing-caption .reddish-gradient {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(-10deg, rgba(2, 0, 36, 0.8757878151260504) 50%, rgba(254, 27, 60, 0.5732668067226891) 70%, rgba(254, 226, 229, 0.8337710084033614) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .landing-caption .reddish-gradient .large-title {
+    font-size: 350%;
+    line-height: 65px;
+  }
+
+  .landing-caption .landing-logo {
+    display: block;
+    position: absolute;
+    background: none;
+    top: 10px;
+    left: 5px;
+  }
+
+  .landing-caption .landing-logo img {
+    width: 400px;
   }
 }
