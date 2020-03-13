@@ -206,6 +206,10 @@ header .header-ad i {
   display: none;
 }
 
+.landing-caption .date {
+  display: none;
+}
+
 .landing-caption h2 {
   font-size: 125%;
 }
@@ -905,7 +909,7 @@ footer .bottom-footer .footer-img {
   }
 
   .latest-news .news-container .news-img {
-    min-height: 171px;
+    min-height: 100%;
     width: 100%;
   }
 
@@ -1034,5 +1038,16 @@ footer .bottom-footer .footer-img {
 
   .landing-caption .landing-logo img {
     width: 400px;
+  }
+
+  .landing-caption .date {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+
+  .latest-news .news-container .news-s-box {
+    grid-template-rows: 114px 1fr;
   }
 }
