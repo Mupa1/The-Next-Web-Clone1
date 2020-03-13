@@ -1020,6 +1020,10 @@ footer .bottom-footer .footer-img {
     padding-left: 20px;
   }
 
+  main > div:not(.landing-banner) {
+    max-width: 1152px;
+  }
+
   .landing-banner {
     height: 420px;
     grid-template-columns: 2fr 1fr;
