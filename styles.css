@@ -943,7 +943,7 @@ footer .bottom-footer .footer-img {
   }
 
   .articles-sections .lg-img {
-    height: 266px;
+    height: 100%;
   }
 
   .articles-sections .article {
@@ -1020,6 +1020,13 @@ footer .bottom-footer .footer-img {
     padding-left: 20px;
   }
 
+  .landing-banner {
+    height: 420px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 210px;
+    grid-auto-rows: minmax(210px, auto);
+  }
+
   .landing-caption .reddish-gradient {
     background: rgb(0, 0, 0);
     background: linear-gradient(-10deg, rgba(2, 0, 36, 0.8757878151260504) 50%, rgba(254, 27, 60, 0.5732668067226891) 70%, rgba(254, 226, 229, 0.8337710084033614) 100%);
@@ -1079,5 +1086,15 @@ footer .bottom-footer .footer-img {
 
   .latest-funding .funding-info .last-fund {
     display: block;
+  }
+
+  .articles-sections {
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 14px;
+    font-size: 90%;
+  }
+
+  .articles-sections .article {
+    grid-template-rows: 10px 218px 116px 1fr;
   }
 }
