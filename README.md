@@ -23,6 +23,10 @@ Cloning The Next Web, a tech-focused magazine which uses media queries to gracef
 
 ![screenshot](./images/medium-landscape-768-by-1024.png)
 
+### Large view (min-width: 1200px)
+
+![screenshot](./images/large-screen.png)
+
 ## Built With
 
 - HTML,
