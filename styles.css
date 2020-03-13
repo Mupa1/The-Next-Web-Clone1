@@ -1051,6 +1051,11 @@ footer .bottom-footer .footer-img {
     right: 19px;
   }
 
+  .latest-news .news-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .latest-news .news-container .news-s-box {
     grid-template-rows: 114px 1fr;
   }
