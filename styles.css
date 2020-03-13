@@ -402,6 +402,10 @@ aside .aside-icons i {
   grid-row-gap: 1rem;
 }
 
+.latest-funding .funding-info .last-fund {
+  display: none;
+}
+
 .latest-funding .funding-info .funding-info-cont {
   position: relative;
 }
@@ -1049,5 +1053,26 @@ footer .bottom-footer .footer-img {
 
   .latest-news .news-container .news-s-box {
     grid-template-rows: 114px 1fr;
+  }
+
+  .latest-funding .top-fund-links {
+    width: 300px;
+  }
+
+  .latest-funding .funding-info .funding-info-cont {
+    font-size: 90%;
+  }
+
+  .latest-funding .funding-info .funding-info-cont .funding-title {
+    font-size: 110%;
+  }
+
+  .latest-funding .funding-info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .latest-funding .funding-info .last-fund {
+    display: block;
   }
 }
